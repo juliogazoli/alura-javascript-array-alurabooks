@@ -1,6 +1,7 @@
 const elementoParaInserirLivros = document.getElementById('livros')
 
 function exibirOsLivrosNaTela(listaDeLivros) {
+    elementoParaInserirLivros.innerHTML = ''
     listaDeLivros.forEach(livro => {
         elementoParaInserirLivros.innerHTML += `
         <div class="livro">
@@ -14,7 +15,7 @@ function exibirOsLivrosNaTela(listaDeLivros) {
             <div class="tags">
                 <span class="tag">${livro.categoria}</span>
             </div>
-        </div>F
+        </div>
         `
     })
 }
